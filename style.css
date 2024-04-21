@@ -24,9 +24,10 @@ body {
 }
 
 .topmenu:hover {
-  color: white;
-  /* Add the styles here */
-}
+    color: white;
+    font-weight: bolder; /* Adding font-weight as bolder */
+    text-decoration: underline; /* Adding text-decoration as underline */
+  }
 
 .topdiv {
   float: right;
