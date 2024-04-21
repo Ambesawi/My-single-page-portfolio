@@ -5,6 +5,7 @@ function addRecommendation() {
   if (recommendation.value != null && recommendation.value.trim() != "") {
     console.log("New recommendation added");
     //Call showPopup here
+    showPopup(true); // Call showPopup to display the popup
 
     // Create a new 'recommendation' element and set it's value to the user's message
     var element = document.createElement("div");
@@ -13,8 +14,12 @@ function addRecommendation() {
     // Add this element to the end of the list of recommendations
     document.getElementById("all_recommendations").appendChild(element); 
     
+
     // Reset the value of the textarea
     recommendation.value = "";
+
+    // Show confirmation message in popup
+    document.getElementById('popup').innerHTML = "<img src='html_finalprojimages/checkmark--outline.svg'/><h3>Thank you for your recommendation!</h3>"; // Add appropriate confirmation message here
   }
 }
 
@@ -24,5 +29,5 @@ function showPopup(bool) {
   } else {
     document.getElementById('popup').style.visibility = 'hidden'
   }
+  
 }
- 
