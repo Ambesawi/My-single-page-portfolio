@@ -34,10 +34,11 @@ body {
 }
 
 .profile_name {
-  float: left;
-  padding-left: 2cm;
-  /* Add the styles here */
-}
+    float: left;
+    padding-left: 2cm;
+    color: #333; /* Light color of your choice */
+    font-size: 30px; /* Font size of 30px */
+  }
 
 .profile_name .contact_info {
   font-size: 15px;
